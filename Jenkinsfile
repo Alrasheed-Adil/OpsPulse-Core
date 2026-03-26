@@ -1,10 +1,29 @@
 pipeline {
-    agent any 
+    agent any
+
     stages {
-        stage('Hello Jenkins') {
+        stage('Checkout') {
             steps {
-                echo "Welcome to OpsPulse-Core!"
+                echo 'Pulling code from GitHub...'
             }
+        }
+        stage('Set Permissions') {
+            steps {
+                // This ensures the container can execute the script
+                sh 'chmod +x script.sh'
+            }
+        }
+        stage('Execute Logic') {
+            steps {
+                echo 'Running the core script...'
+                sh './script.sh'
+            }
+        }
+    }
+    
+    post {
+        success {
+            echo 'SUCCESS: OpsPulse-Core is officially running!'
         }
     }
 }
