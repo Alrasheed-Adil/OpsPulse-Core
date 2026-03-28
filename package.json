@@ -1,0 +1,23 @@
+{
+  "name": "opspulse-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alrasheed-Adil/OpsPulse-Core.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alrasheed-Adil/OpsPulse-Core/issues"
+  },
+  "homepage": "https://github.com/Alrasheed-Adil/OpsPulse-Core#readme",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
