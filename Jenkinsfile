@@ -2,6 +2,11 @@ pipeline {
     agent any
 
     stages {
+        stage('Webhook Triggered') {
+            steps {
+                echo 'Build started from webhook trigger.'
+            }
+        }
         stage('Checkout') {
             steps {
                 echo 'Pulling code from GitHub...'
